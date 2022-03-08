@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f1f1f1;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.success, .error{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+.success{
+    background-color: rgb(7, 99, 7);
+}
+.error{
+    background-color: rgb(173, 10, 10);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.image img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+label{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid rgba(253, 182, 28, 0.407);
+}
+
+.inputs{
+    margin: 20px 0;
+}
+
+button{
+    background: #1ce771;
+    color: #000;
+    font-size: 17px;
+    padding: 10px 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+button:hover{
+    background: #ff3535;
+    transition: .3s;
+}
+
+input, button{
+    outline: none;
+    width: 60%;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    width: 33%;
+   
+}
+td{
+    text-align: center;
+   
+}
+
+.delete{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    background: rgb(173, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+@media screen and (max-width: 650px){
+    input, 
+    button,
+    label{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .image img{
+        width: 100px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
